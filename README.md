@@ -20,11 +20,13 @@ This module creates an Azure Policy Definition and Assignment to enforce require
 | display_name      | Display name of the policy definition                                | string | "Anti-Fraud Policy"                                               | yes      |
 | description       | Description of the policy definition                                 | string | "This policy audits virtual machines not published by Canonical." | yes      |
 | policy_mode       | Mode of the policy definition                                        | string | "All"                                                             | yes      |
+| Subscription      | Subscription that the policy is going to be applied                  | string | n/a                                                               | yes      |
 
 
 ## Example
 
 terraform plan -var 'scope="/subscriptions/b1db2d61-6edf-4e6f-b42f-286904728d93"'
+terraform apply -var 'scope="/subscriptions/b1db2d61-6edf-4e6f-b42f-286904728d93"'
+terraform destroy -var 'scope="/subscriptions/b1db2d61-6edf-4e6f-b42f-286904728d93"'
 
-Sign in using az login from Powershell is required to run the main.tf 
 

@@ -26,3 +26,21 @@ variable "scope" {
   description = "Scope of the policy assignment"
   type        = string
 }
+
+variable "subscription_id" {
+ type   = string
+ description  = "The value of the subscription for assigning the policy"
+}
+variable "tenant_id" {
+    type = string
+    description = "Azure Tenant ID"
+}
+variable "client_id" {
+    type = string
+    description = "Azure AD Application ID"
+}
+variable "client_secret" {
+    type = string
+    sensitive = true
+    description = "Azure AD Application Secret"
+}

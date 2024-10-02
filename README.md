@@ -1,15 +1,6 @@
 # Terraform Azure Anti-Fraud Policy Module
 
-This module creates an Azure Policy Definition and Assignment to enforce required tags on Azure resources.
-
-## Usage
-
-1. Install Terraform (version 0.13 or later) and configure your Azure credentials.
-2. Clone this repository and navigate to the root directory.
-3. Run terraform init to initialize the provider and modules.
-4. Customize the variables in variables.tf as needed.
-5. Run terraform apply to create or update the Azure resources.
-
+This module creates an Azure Policy to block specific Resource Types bieng built in your environment
 
 ## Inputs
 
@@ -22,11 +13,5 @@ This module creates an Azure Policy Definition and Assignment to enforce require
 | policy_mode       | Mode of the policy definition                                        | string | "All"                                                             | yes      |
 | Subscription      | Subscription that the policy is going to be applied                  | string | n/a                                                               | yes      |
 
-
-## Example
-
-terraform plan -var 'scope="/subscriptions/b1db2d61-6edf-4e6f-b42f-286904728d93"'
-terraform apply -var 'scope="/subscriptions/b1db2d61-6edf-4e6f-b42f-286904728d93"'
-terraform destroy -var 'scope="/subscriptions/b1db2d61-6edf-4e6f-b42f-286904728d93"'
 
 

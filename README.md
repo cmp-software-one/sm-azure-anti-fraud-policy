@@ -1,6 +1,6 @@
 # About this Automation
 
-This module creates an Azure Policy to block specific Resource Types bieng built in your environment
+This module creates an Azure Policy to block specific Resource Types being built in your environment
 
 ## Fields and Best Practices
 
@@ -14,4 +14,7 @@ This module creates an Azure Policy to block specific Resource Types bieng built
 | Subscription      | Subscription that the policy is going to be applied                  | string | n/a                                                               | yes      |
 
 
+## Microsoft Policy information
+
+[Tutorial: Disallow resource types in your cloud environment](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/disallowed-resources?wt.mc_id=searchAPI_azureportal_inproduct_rmskilling&sessionId=3e89c0bd1431469592c14afe02694486)
 

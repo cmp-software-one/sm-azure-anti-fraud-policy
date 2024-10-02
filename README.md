@@ -1,8 +1,8 @@
-# Terraform Azure Anti-Fraud Policy Module
+# About this Automation
 
 This module creates an Azure Policy to block specific Resource Types bieng built in your environment
 
-## Inputs
+## Fields and Best Practices
 
 | Name              | Description                                                          | Type   | Default                                                           | Required |
 |-------------------|----------------------------------------------------------------------|--------|-------------------------------------------------------------------|----------|
